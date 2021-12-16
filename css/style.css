@@ -2,9 +2,8 @@
 
 :root {
   --color-primary: #15f4ee;
-  --color-secondary: #000000;
+  --color-secondary: #909096;
   --color-body: #f7f7f7;
-  --color-icons: #909096;
 }
 
 html {
@@ -63,11 +62,15 @@ h3 {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Icons*/
 .icon {
-  fill: var(--color-icons);
-  width: 25px;
-  height: 25px;
+  fill: var(--color-secondary);
+  width: 15px;
+  height: 15px;
 }
 
 .icon:hover {
@@ -77,6 +80,110 @@ h3 {
 }
 
 .icon--social {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
+}
+
+/* Lists */
+.list {
+  list-style: none;
+}
+
+/* Collapsibles */
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Nav */
+.nav {
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.nav__list {
+  width: 100%;
+  padding-left: 0;
+  text-align: center;
+}
+
+.nav__top {
+  width: 100%;
+  height: 130px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav__logo svg {
+  display: flex;
+  width: 70px;
+  height: 60px;
+}
+
+.nav__logo span {
+  font-size: 1.7rem;
+  color: var(--color-primary);
+}
+
+.nav .nav__top > span {
+  font-size: 1.2rem;
+}
+
+.nav__toggler {
+  position: fixed;
+  box-shadow: 0 0 0 5px #000;
+  background: #000;
+  top: 2rem;
+  right: 2rem;
+}
+
+.nav__item {
+  border-bottom: 0.1px solid var(--color-secondary);
+}
+
+.nav__item:first-child {
+  border-top: 0.1px solid var(--color-secondary);
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  fill: var(--color-primary);
+}
+
+.nav--social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.nav--social li {
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 80px;
+  }
+
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__brand {
+    width: 80px;
+  }
 }
