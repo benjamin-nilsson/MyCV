@@ -407,7 +407,7 @@ a {
   z-index: 100;
 }
 
-.block--education {
+.block--experience {
   min-height: 100vh;
   padding: 9rem 3rem;
   z-index: 100;
@@ -423,7 +423,7 @@ a {
     padding-bottom: 0;
   }
 
-  .block--education {
+  .block--experience {
     padding: 0px 18rem;
   }
 }
@@ -441,7 +441,7 @@ a {
     gap: 5rem;
   }
 
-  .grid--1x2-education {
+  .grid--1x2-experience {
     grid-template-columns: repeat(2, 20% 80%);
     align-items: center;
     gap: 20rem;
@@ -799,9 +799,18 @@ a {
 }
 
 /*Branch*/
-.branch--header {
+.branch--header--education {
   position: relative;
   top: 12rem;
+  color: var(--color-body);
+  margin-left: 3rem;
+  font-family: "La Belle Aurore", cursive;
+  z-index: 2;
+}
+
+.branch--header--experience {
+  margin-top: 10rem;
+  padding-bottom: 2rem;
   color: var(--color-body);
   margin-left: 3rem;
   font-family: "La Belle Aurore", cursive;
@@ -862,6 +871,49 @@ a {
   margin-top: -0.5rem;
 }
 
+.branch--dev--orangered {
+  margin-top: -0.5rem;
+  margin-left: 2rem;
+  height: 30rem;
+  width: 5rem;
+  border: 5px solid orangered;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 20px;
+}
+
+.branch--circle--top--orangered {
+  margin-top: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 5px solid orangered;
+  border-radius: 50px;
+  margin-left: 4rem;
+  background: orangered;
+}
+
+.branch--circle--middle--orangered {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 5px solid orangered;
+  border-radius: 50px;
+  margin-left: 4rem;
+  position: relative;
+  top: 14rem;
+  background: orangered;
+}
+
+.branch--circle--bottom--orangered {
+  background: orangered;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 5px solid orangered;
+  border-radius: 50px;
+  margin-left: 4rem;
+  margin-top: -0.5rem;
+}
+
 .branch--dev--info {
   color: var(--color-body);
   position: relative;
@@ -888,13 +940,31 @@ a {
 /* Feature */
 .feature {
   margin-top: 10rem;
-  gap: 0rem 17rem;
+  margin-right: 5rem;
+  gap: 0rem 18rem;
+}
+
+.feature--headings--pink {
+  font-weight: 100;
+  color: #c91c55;
+}
+
+.feature--headings--orangered {
+  font-weight: 100;
+  color: orangered;
 }
 
 .feature--content {
   padding: 2rem;
   box-shadow: 0 0 30px 5px #000;
-  border-radius: 5px;
+  border: 2.5px solid #c91c55;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.feature--content--orangered {
+  border-color: orangered;
 }
 
 @media screen and (min-width: 900px) {
