@@ -35,13 +35,36 @@ openMenu.addEventListener('click', function() {
     })
 });
 
-const reveals = document.querySelectorAll(".reveal");
-reveals.forEach((item, index) => {
+const revealsOne = document.querySelectorAll(".reveal-1");
+revealsOne.forEach((item, index) => {
     setTimeout(function() {
     item.style.visibility = "visible";
     item.style.color = "#fff";
     }, 80 * (index + 1));
 });
+
+
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square = entry.target.querySelector('.reveal--about');
+  
+      if (entry.isIntersecting) {
+        const revealsTwo = document.querySelectorAll(".reveal-2");
+        revealsTwo.forEach((item, index) => {
+            setTimeout(function() {
+            item.style.visibility = "visible";
+            }, 80 * (index + 1));
+        });
+        return; // if we added the class, exit the function
+      }
+  
+      // We're not intersecting, so remove the class!
+      square.classList.remove('reveal-2');
+    });
+  });
+  
+  observer.observe(document.querySelector('.reveal--about'));
   
 
 /* $(".wavy").bind("webkitAnimationEnd mozAnimationEnd animationend", function(){
@@ -208,6 +231,44 @@ window.addEventListener('load', function(){
     })
     });
 
+
 /**
- * Hides the menu when its collapsed.
+ * Enables the rotation of different labels.
  */
+$(document).ready(function() {
+    var entries = [
+        { label : 'HTML'},
+        { label : 'CSS'},
+        { label : 'MYSQL'},
+        { label : 'SQLITE'},
+        { label : 'JAVA'},
+        { label : 'JAVAFX'},
+        { label : 'SPRINGBOOT'},
+        { label : 'GITHUB'},
+        { label : 'JAVASCRIPT'}
+    ];
+
+    var settings = {
+        entries : entries,
+        height: '100%',
+        width: '100%',
+        radius: '60rem',
+        radiusMin: 10,
+        bgDraw: true,
+        bgColor: '#1d1d1d',
+        opacityOver: 1.00,
+        opacityOut: 0.05,
+        opacitySpeed: 6,
+        fov: 800,
+        speed: 2,
+        fontFamily: 'Courier, Arial, sans-serif',
+        fontSize:'150%',
+        fontColor:'#15f4ee',
+        fontWeight:'bold',
+        fontStyle:'normal',
+        fontStretch:'normal',
+        fontToUpperCase:true
+    };
+
+    $('#rotation').svg3DTagCloud(settings);
+});
