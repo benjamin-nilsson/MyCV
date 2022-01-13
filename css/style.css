@@ -985,3 +985,58 @@ a {
   color: #515152;
   font-family: "La Belle Aurore", cursive;
 }
+
+/* Contact-form */
+
+.contact-form ul {
+  padding: 0;
+}
+
+.contact-form ul li {
+  list-style: none;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.contact-form input {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 1.5rem;
+  background-color: #2b2b2b;
+  color: #8d8d8d;
+  border: none;
+  width: 93%;
+}
+
+.contact-form textarea {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: #2b2b2b;
+  color: #8d8d8d;
+  border: none;
+  width: 93%;
+  height: 50px;
+  min-height: 150px;
+}
+
+.contact-form--half input {
+  width: 93%;
+}
+
+.contact-form a {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.contact-form p {
+  width: 50%;
+  margin-top: 1rem;
+  display: flex;
+}
+
+@media screen and (min-width: 477px) {
+  .contact-form--half input {
+    width: 45.6%;
+    float: left;
+  }
+}

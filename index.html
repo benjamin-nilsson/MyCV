@@ -5,10 +5,233 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <div class="container">Hello</div>
-    <div class="container">Hello</div>
+    <svg id="openMenu" class="icon menu-open">
+        <use xlink:href="/images/sprite2.svg#menu"></use> /* byt bild för x, kan inte bytta färg med fill*/
+    </svg>
+
+    <nav id="menu" class="nav collapsible collapsible--expanded">
+        <svg id="hideMenu" class="icon nav__toggler">
+            <use xlink:href="/images/sprite2.svg#x" alt="Person"></use>
+        </svg>
+    <div class="collapsible__content nav__top">
+        <a class="nav__logo" href="/">
+            <svg>
+                <use xlink:href="/images/sprite2.svg#person"></use>
+            </svg>
+            <span>Benjamin</span>
+        </a>
+        <span>Developer</span>
+    </div>
+        <ul class="collapsible__content list nav__list">
+            <li class="nav__item">
+                <a href="/">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprite2.svg#suit" alt="Person"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="/">
+                <svg class="icon">
+                    <use xlink:href="/images/sprite2.svg#suit" alt="Person"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="nav__item">   
+                <a href="/">
+                    <svg class="icon">
+                        <use xlink:href="/images/sprite2.svg#suit" alt="Person"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul> 
+        <ul class="collapsible__content list nav__list nav--social">
+            <li>
+                <a href="/">
+                    <svg class="icon icon--social">
+                        <use xlink:href="/images/sprite.svg#linkedin" alt="Person"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <svg class="icon icon--social">
+                        <use xlink:href="/images/sprite.svg#linkedin" alt="Person"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <svg class="icon icon--social">
+                        <use xlink:href="/images/sprite.svg#linkedin" alt="Person"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul> 
+    </nav>   
+<canvas id="canvas1"></canvas>
+    <section class="block--home block--gray">
+        <div>
+            <header>
+                <h1 class="reveal--home">
+                    <span class="reveal-1">H</span><span class="reveal-1">e</span><span class="reveal-1">j</span><span class="reveal-1">,</span>
+                    <br>
+                    <span class="reveal-1">j</span><span class="reveal-1">a</span><span class="reveal-1">g</span>
+                    <span class="reveal-1">ä</span><span class="reveal-1">r</span>
+                    <span class="reveal-1 glitch" data-text="B">B</span><span class="reveal-1 glitch" data-text="e">e</span><span class="reveal-1 glitch" data-text="n">n</span><span class="reveal-1 glitch" data-text="j">j</span><span class="reveal-1 glitch" data-text="a">a</span><span class="reveal-1 glitch" data-text="m">m</span><span class="reveal-1 glitch" data-text="i">i</span><span class="reveal-1 glitch" data-text="n">n</span><span class="reveal-1 glitch" data-text="Benjamin"></span><span class="reveal-1">,</span>
+                    <br>
+                    <span class="reveal-1">f</span><span class="reveal-1">u</span><span class="reveal-1">l</span><span class="reveal-1">l</span><span class="reveal-1">s</span><span class="reveal-1">t</span><span class="reveal-1">a</span><span class="reveal-1">c</span><span class="reveal-1">k</span>
+                    <span class="reveal-1">u</span><span class="reveal-1">t</span><span class="reveal-1">v</span><span class="reveal-1">e</span><span class="reveal-1">c</span><span class="reveal-1">k</span><span class="reveal-1">l</span><span class="reveal-1">a</span><span class="reveal-1">r</span><span class="reveal-1">e</span>
+                </h1>
+                <p class="gray--text text--slide-up">Back End / Front End Developer</p>
+                <a href="">
+                    <button class="btn btn--primary btn-background-slide btn--slide-up">Contact me!</button>
+                </a>
+            </header>
+        </div>
+    </section>
+    <section class="block--about block--gray">
+        <div class="grid grid--1x2">
+            <div class="text-zone">
+                <Header>
+                    <h1 class="reveal--about">
+                        <span class="reveal-2">J</span><span class="reveal-2">a</span><span class="reveal-2">g</span><span class="reveal-2">,</span>
+                        <span class="reveal-2">M</span><span class="reveal-2">i</span><span class="reveal-2">g</span>
+                        <span class="reveal-2">o</span><span class="reveal-2">c</span><span class="reveal-2">h</span>
+                        <span class="reveal-2">M</span><span class="reveal-2">i</span><span class="reveal-2">t</span><span class="reveal-2">t</span>
+                        </h1>
+                </Header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae vero quia asperiores voluptates, pariatur iste soluta nisi temporibus harum, fugiat laboriosam tempore explicabo officia! Porro, nihil quas. 
+                        Numquam tempore a repellendus veniam, omnis ratione minima vitae at! A enim, quae atque hic, velit veniam optio ipsum nostrum corporis expedita nemo!
+                </p>
+            </div>
+            <div id="rotation"></div>
+        </div>
+    </section>
+    <section class="block--experience">
+        <article>
+            <div>
+                <h2 class="branch--header--education">Utbildning</h2>
+                <div class="branch--blur"></div>
+                <div class="feature grid grid--1x2-experience">
+                    <div class="branch--main" data-aos="fade-right">
+                        <div class="branch--dev">
+                            <div class="branch--circle--middle"></div>
+                            <p class="branch--dev--info"><b>TEKNIKHÖGSKOLAN</b><br> Göteborg <br> Aug.2021 - Nuvarande</p>
+                        </div>
+                        <div class="branch--circle--bottom"></div>
+                    </div>
+                    <div class="feature--content" data-text="Commit Message:" data-aos="zoom-in-left">
+                        <h3 class="feature--headings--pink">JAVAUTVECKLARE</h1>
+                            <ul>
+                                <li>Grundläggande Programmering</li>
+                                <li>Databaser</li>
+                                <li>Frontend</li>
+                                <li>Backend</li>
+                                <li>Säker Mjukvara</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="feature grid grid--1x2-experience">
+                    <div class="branch--main" data-aos="fade-up">
+                        <div class="branch--circle--top"></div>
+                        <div class="branch--dev">
+                            <div class="branch--circle--middle"></div>
+                            <p class="branch--dev--info"><b>CODE WITH MOSH</b><br> Internationell <br> Aug.2020 - Maj.2021</p>
+                        </div>
+                        <div class="branch--circle--bottom"></div>
+                    </div>
+                    <div class="feature--content" data-text="Commit Message:">
+                        <h3 class="feature--headings--pink">CODE WITH MOSH</h1>
+                            <ul>
+                                <li>Java & Objektorienterad Programmering (OOP)</li>
+                                <li>Datastrukturer & Algoritmer</li>
+                                <li>SQL</li>
+                                <li>HTML/CSS </li>
+                                <li>JavaScript</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="feature grid grid--1x2-experience">
+                    <div class="branch--main" data-aos="fade-up">
+                        <div class="branch--circle--top"></div>
+                        <div class="branch--dev">
+                            <div class="branch--circle--middle"></div>
+                            <p class="branch--dev--info"><b>LINNÉUNIVERSITETET</b><br> Växjö <br> Aug.2016 - Maj.2019</p>
+                        </div>
+                        <div class="branch--circle--bottom"></div>
+                    </div>
+                    <div class="feature--content" data-text="Commit Message:">
+                        <h3 class="feature--headings--pink">Internationel Försäljning och Marknadsföring</h1>
+                            <p>F.K. FÖRETAGSEKONOMI</p>
+                            <ul>
+                                <li>Min Kandidatuppsats, ‘The Effect of Marketing Automation on the Buying Decision’, tilldelades ’Årets Uppsats’ inom ämnet Marknadsföring av
+                                    Linnéuniversitetet.</li>
+                                <li>Programmet fokuserade på B2B. Där studerade jag ett brett utbud av kurser, bland annat Supply Chain Management, Avancerad Teknisk
+                                    Försäljning, Finansiering, Global Trade, och Key Account Management.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="block--experience">
+        <article>
+            <div>
+                <h2 class="branch--header--experience">Arbetslivserfarenhet</h2>
+                <div class="feature grid grid--1x2-experience">
+                    <div class="branch--main" data-aos="fade-right">
+                        <div class="branch--circle--top--orangered"></div>
+                        <div class="branch--dev--orangered">
+                            <div class="branch--circle--middle--orangered"></div>
+                            <p class="branch--dev--info"><b>ICA SUPERMARKET</b><br> Töreboda <br> Maj.2016 - Aug.2020</p>
+                        </div>
+                        <div class="branch--circle--bottom--orangered"></div>
+                    </div>
+                    <div class="feature--content feature--content--orangered" data-text="Commit Message:" data-aos="zoom-in-right">
+                        <h3 class="feature--headings--orangered">KASSÖR, LIVSMEDELSINDUSTRIN</h1>
+                            <ul>
+                                <li>Jobbade inom livsmedelsindustrin under tiden jag pluggade.</li>
+                                <li>Tillhandahöll utmärkt service samtidigt som snabba transaktioner utfördes med noggrannhet i en stressig och hektisk miljö.
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="feature grid grid--1x2-experience">
+                    <div class="branch--main" data-aos="fade-up">
+                        <div class="branch--circle--top--orangered"></div>
+                        <div class="branch--dev--orangered">
+                            <div class="branch--circle--middle--orangered"></div>
+                            <p class="branch--dev--info"><b>KÄLLBERGS</b><br> Töreboda <br> Aug.2018 - Jan.2019</p>
+                        </div>
+                        <div class="branch--circle--bottom--orangered"></div>
+                    </div>
+                    <div class="feature--content feature--content--orangered" data-text="Commit Message:">
+                        <h3 class="feature--headings--orangered">SÄLJPRAKTIKANT, LIVSMEDELSINDUSTRIN</h1>
+                            <ul>
+                                <li>Analyserade affärsmöjligheter i Sydostasien och identifierade strategier för marknadsexpansion.</li>
+                                <li>Etablerade ett nätverk av distributörer genom att utveckla urvalskriterier, identifiera, utvärdera och besluta om distributörer.</li>
+                                <li> Samordnat mellan distributörer och olika avdelningar inom företaget såsom FoU, försäljning och export.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+<canvas id="canvas2"></canvas>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/index.js/rotation.js"></script>
+    <script src="/index.js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          delay: 000,
+      });
+    </script>
 </body>
 </html>
