@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <svg id="openMenu" class="icon menu-open">
+        <use xlink:href="/images/sprite.svg#menu" alt="Open menu"></use> /* byt bild för x, kan inte bytta färg med fill*/
+    </svg>
+
+    <nav id="menu" class="nav collapsible collapsible--expanded">
+        <svg id="hideMenu" class="icon nav__toggler">
+            <use xlink:href="/images/sprite.svg#x" alt="Remove menu"></use>
+        </svg>
+    <div class="collapsible__content nav__top">
+        <a class="nav__logo" href="/html/index.html">
+            <span id="cv-logo">B</span>
+        </a>
+        <span id="name">Benjamin</span>
+        <span>Utvecklare</span>
+    </div>
+    <ul class="collapsible__content list nav__list">
+        <li class="nav__item">
+            <a href="/html/about.html">
+                Om mig
+            </a>
+        </li>
+        <li class="nav__item">
+            <a href="/html/education.html">
+                Utbildning
+            </a>
+        </li>
+        <li class="nav__item">   
+            <a href="/html/experience.html">
+                Erfarenhet
+            </a>
+        </li>
+        <li class="nav__item">   
+            <a href="/html/portfolio.html">
+                Portfölj
+            </a>
+        </li>
+        <li class="nav__item">   
+            <a href="/html/contact.html">
+                Kontakta mig
+            </a>
+        </li>
+    </ul> 
+    <ul class="collapsible__content list nav__list nav--social">
+        <li>
+            <a href="https://www.linkedin.com/in/benjamin-sakarias-nilsson/" target="_blank">
+                <svg class="icon icon--social">
+                    <use xlink:href="/images/sprite.svg#github" alt="Github logo"></use>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/benjamin-nilsson" target="_blank">
+                <svg class="icon icon--social">
+                    <use xlink:href="/images/sprite.svg#linkedin" alt="Linkedin logo"></use>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="/html/contact.html">
+                <svg class="icon icon--social">
+                    <use xlink:href="/images/sprite.svg#email" alt="Email logo"></use>
+                </svg>
+            </a>
+        </li>
+    </ul> 
+    </nav>   
+    <section class="block--experience">
+        <article>
+            <div>
+                <h2 class="branch--header--experience-full">Arbetslivserfarenhet</h2>
+                <div class="feature grid grid--1x2--experience">
+                    <div class="branch--main" data-aos="fade-right">
+                        <div class="branch--circle--top--orangered"></div>
+                        <div class="branch--dev--orangered">
+                            <div class="branch--circle--middle--orangered"></div>
+                            <p class="branch--dev--info"><b>ICA SUPERMARKET</b><br> Töreboda <br> Maj.2016 - Aug.2020</p>
+                        </div>
+                        <div class="branch--circle--bottom--orangered"></div>
+                    </div>
+                    <div class="feature--content feature--content--orangered" data-text="Commit Message:" data-aos="zoom-in-right">
+                        <h3 class="feature--headings--orangered">KASSÖR, LIVSMEDELSINDUSTRIN</h1>
+                            <ul>
+                                <li>Jobbade inom livsmedelsindustrin under tiden jag pluggade.</li>
+                                <li>Tillhandahöll utmärkt service samtidigt som snabba transaktioner utfördes med noggrannhet i en stressig och hektisk miljö.
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="feature grid grid--1x2--experience">
+                    <div class="branch--main" data-aos="fade-up">
+                        <div class="branch--circle--top--orangered"></div>
+                        <div class="branch--dev--orangered">
+                            <div class="branch--circle--middle--orangered"></div>
+                            <p class="branch--dev--info"><b>KÄLLBERGS</b><br> Töreboda <br> Aug.2018 - Jan.2019</p>
+                        </div>
+                        <div class="branch--circle--bottom--orangered"></div>
+                    </div>
+                    <div class="feature--content feature--content--orangered" data-text="Commit Message:">
+                        <h3 class="feature--headings--orangered">SÄLJPRAKTIKANT, LIVSMEDELSINDUSTRIN</h1>
+                            <ul>
+                                <li>Analyserade affärsmöjligheter i Sydostasien och identifierade strategier för marknadsexpansion.</li>
+                                <li>Etablerade ett nätverk av distributörer genom att utveckla urvalskriterier, identifiera, utvärdera och besluta om distributörer.</li>
+                                <li> Samordnat mellan distributörer och olika avdelningar inom företaget såsom FoU, försäljning och export.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="/index.js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          delay: 000,
+      });
+    </script>
+</body>
+</html>

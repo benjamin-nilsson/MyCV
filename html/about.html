@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <svg id="openMenu" class="icon menu-open">
+      <use xlink:href="/images/sprite.svg#menu" alt="Open menu"></use>
+      /* byt bild för x, kan inte bytta färg med fill*/
+    </svg>
+
+    <nav id="menu" class="nav collapsible collapsible--expanded">
+      <svg id="hideMenu" class="icon nav__toggler">
+        <use xlink:href="/images/sprite.svg#x" alt="Remove menu"></use>
+      </svg>
+      <div class="collapsible__content nav__top">
+        <a class="nav__logo" href="/html/index.html">
+          <span id="cv-logo">B</span>
+        </a>
+        <span id="name">Benjamin</span>
+        <span>Utvecklare</span>
+      </div>
+      <ul class="collapsible__content list nav__list">
+        <li class="nav__item">
+          <a href="/html/about.html"> Om mig </a>
+        </li>
+        <li class="nav__item">
+          <a href="/html/education.html"> Utbildning </a>
+        </li>
+        <li class="nav__item">
+          <a href="/html/experience.html"> Erfarenhet </a>
+        </li>
+        <li class="nav__item">
+          <a href="/html/portfolio.html"> Portfölj </a>
+        </li>
+        <li class="nav__item">
+          <a href="/html/contact.html"> Kontakta mig </a>
+        </li>
+      </ul>
+      <ul class="collapsible__content list nav__list nav--social">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/benjamin-sakarias-nilsson/"
+            target="_blank"
+          >
+            <svg class="icon icon--social">
+              <use
+                xlink:href="/images/sprite.svg#github"
+                alt="Github logo"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/benjamin-nilsson" target="_blank">
+            <svg class="icon icon--social">
+              <use
+                xlink:href="/images/sprite.svg#linkedin"
+                alt="Linkedin logo"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="/html/contact.html">
+            <svg class="icon icon--social">
+              <use xlink:href="/images/sprite.svg#email" alt="Email logo"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="block--about block--gray">
+      <div class="grid grid--1x2">
+        <div class="text-zone">
+          <header>
+            <h1 class="reveal--about">
+              <span class="reveal-2">J</span><span class="reveal-2">a</span
+              ><span class="reveal-2">g</span><span class="reveal-2">,</span>
+              <span class="reveal-2">M</span><span class="reveal-2">i</span
+              ><span class="reveal-2">g</span> <span class="reveal-2">o</span
+              ><span class="reveal-2">c</span><span class="reveal-2">h</span>
+              <span class="reveal-2">M</span><span class="reveal-2">i</span
+              ><span class="reveal-2">t</span><span class="reveal-2">t</span>
+            </h1>
+          </header>
+          <p>
+            Min passion är att arbeta med begåvade människor och samarbeta för
+            att skapa produkter som har en omedelbar påverkan.<br /><br />
+            Jag tycker om att manipulera data för att lösa problem eller för
+            projekt jag vill bedriva och det är genom att lösa dem som jag
+            utvecklar min kodningsförmåga. Till exempel så har jag ett stort
+            intresse för musik och byggde därmed en applikation som
+            implementerade både Youtubes och Spotifys API för att automatiskt
+            lägga till låtar från Youtube till Spotify, vilket lärde mig använda
+            <span style="color: #15f4ee"> APIs och catching</span>.<br /><br />
+            Jag är ivrig att fortsätta min resa som utvecklare och ser fram emot
+            att höra om hur vi kan gå vidare tillsammans.
+          </p>
+        </div>
+        <div id="rotation"></div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/index.js/rotation.js"></script>
+    <script src="/index.js/main.js"></script>
+  </body>
+</html>

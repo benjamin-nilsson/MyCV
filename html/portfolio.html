@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <svg id="openMenu" class="icon menu-open">
+      <use xlink:href="/images/sprite.svg#menu" alt="Open menu"></use>
+      /* byt bild för x, kan inte bytta färg med fill*/
+    </svg>
+
+    <nav id="menu" class="nav collapsible collapsible--expanded">
+      <svg id="hideMenu" class="icon nav__toggler">
+        <use xlink:href="/images/sprite.svg#x" alt="Remove menu"></use>
+      </svg>
+      <div class="collapsible__content nav__top">
+        <a class="nav__logo" href="/html/index.html">
+          <span id="cv-logo">B</span>
+        </a>
+        <span id="name">Benjamin</span>
+        <span>Utvecklare</span>
+      </div>
+      <ul class="collapsible__content list nav__list">
+        <li class="nav__item">
+          <a href="/html/about.html"> Om mig </a>
+        </li>
+        <li class="nav__item">
+          <a href="/html/education.html"> Utbildning </a>
+        </li>
+        <li class="nav__item">
+          <a href="/html/experience.html"> Erfarenhet </a>
+        </li>
+        <li class="nav__item">
+          <a href="/html/portfolio.html"> Portfölj </a>
+        </li>
+        <li class="nav__item">
+          <a href="/html/contact.html"> Kontakta mig </a>
+        </li>
+      </ul>
+      <ul class="collapsible__content list nav__list nav--social">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/benjamin-sakarias-nilsson/"
+            target="_blank"
+          >
+            <svg class="icon icon--social">
+              <use
+                xlink:href="/images/sprite.svg#github"
+                alt="Github logo"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/benjamin-nilsson" target="_blank">
+            <svg class="icon icon--social">
+              <use
+                xlink:href="/images/sprite.svg#linkedin"
+                alt="Linkedin logo"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="/html/contact.html">
+            <svg class="icon icon--social">
+              <use xlink:href="/images/sprite.svg#email" alt="Email logo"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="block--gray block--about<">
+      <div class="portfolio-content">
+        <h1>Min Portfölj</h1>
+        <p>
+          Det här är en galleri av några av de projekt jag gjort.
+          <br />Intresserad av att se mer? Besök min
+          <a href="https://github.com/benjamin-nilsson">Github</a>.
+        </p>
+      </div>
+      <div class="portfolio grid grid--portfolio">
+        <div class="card">
+          <span></span>
+          <a
+            href="https://github.com/benjamin-nilsson/CinemaBookingSystem"
+            target="_blank"
+            >VIEW <br />
+            PROJECT
+            <div class="hover-project"></div>
+          </a>
+          <div class="content">
+            <h2>Cinema Booking System</h2>
+            <p>
+              Möjliggör för en användare att se en biografs utbud av filmer samt
+              boka biljetter för att se en visning av dessa filmer.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <span></span>
+          <a
+            href="https://github.com/benjamin-nilsson/AnimalGame"
+            target="_blank"
+            >VIEW <br />
+            PROJECT
+            <div class="hover-project"></div>
+          </a>
+          <div class="content">
+            <h2>Animal Game</h2>
+            <p>
+              Spelet går ut på att köpa och sälja djur för att skappa en så stor
+              bondgård som möjligt.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <span></span>
+          <a
+            href="https://github.com/benjamin-nilsson/YoutubeGeneratedPlaylistInSpotify"
+            target="_blank"
+            >VIEW <br />
+            PROJECT
+            <div class="hover-project"></div>
+          </a>
+          <div class="content">
+            <h2>Spotify Generate Playlist</h2>
+            <p>
+              Skapar en spellista i Spotify med sånger genererade från Youtbes
+              'Gillade' videos spellista.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <span></span>
+          <a href="https://benjaminfied.netlify.app/#" target="_blank"
+            >VIEW <br />
+            PROJECT
+            <div class="hover-project"></div>
+          </a>
+          <div class="content">
+            <h2>Benjaminify</h2>
+            <p>Är en skenwebbplats där man kan köpa och registera domäner.</p>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/benjamin-nilsson" target="_blank">
+        <button class="btn btn--primary btn-background-slide portfolio-button">
+          Se mer!
+        </button>
+      </a>
+    </section>
+    <script src="/index.js/main.js"></script>
+  </body>
+</html>
