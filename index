@@ -17,30 +17,30 @@
         <svg id="hideMenu" class="icon nav__toggler">
             <use xlink:href="/images/sprite.svg#x" alt="Remove menu"></use>
         </svg>
-    <div class="collapsible__content nav__top">
-        <a class="nav__logo" href="">
-            <span id="cv-logo">B</span>
-        </a>
-        <span id="name">Benjamin</span>
-        <span>Utvecklare</span>
-    </div>
-    <ul class="collapsible__content list nav__list">
-        <li class="nav__item">
-          <a href="/about.html"> Om mig </a>
-        </li>
-        <li class="nav__item">
-          <a href="/education.html"> Utbildning </a>
-        </li>
-        <li class="nav__item">
-          <a href="/experience.html"> Erfarenhet </a>
-        </li>
-        <li class="nav__item">
-          <a href="/portfolio.html"> Portfölj </a>
-        </li>
-        <li class="nav__item">
-          <a href="/contact.html"> Kontakta mig </a>
-        </li>
-      </ul> 
+        <div class="collapsible__content nav__top">
+            <a class="nav__logo" href="">
+              <span id="cv-logo">B</span>
+            </a>
+            <span id="name">Benjamin</span>
+            <span>Utvecklare</span>
+          </div>
+          <ul class="collapsible__content list nav__list">
+            <li class="nav__item">
+              <a href="/about"> Om mig </a>
+            </li>
+            <li class="nav__item">
+              <a href="/education"> Utbildning </a>
+            </li>
+            <li class="nav__item">
+              <a href="/experience"> Erfarenhet </a>
+            </li>
+            <li class="nav__item">
+              <a href="/portfolio"> Portfölj </a>
+            </li>
+            <li class="nav__item">
+              <a href="/contact"> Kontakta mig </a>
+            </li>
+          </ul>
         <ul class="collapsible__content list nav__list nav--social">
             <li>
                 <a href="https://www.linkedin.com/in/benjamin-sakarias-nilsson/" target="_blank">
