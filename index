@@ -306,19 +306,19 @@
                     <div class="contact-form">
                         <ul>
                             <li>
-                                <input type="text" id="name" placeholder="Namn" required>
+                                <input type="text" id="name" placeholder="Namn" required maxlength="45">
                                 <label" class="input__label"></label>
                             </li>
                             <li >
-                                <input type="email" id="email" placeholder="Email" required>
+                                <input type="email" id="email" placeholder="Email" required maxlength="255">
                                 <label" class="input__label"></label>
                             </li>
                             <li>
-                                <input type="text" id="subject" placeholder="Ämne" required>
+                                <input type="text" id="subject" placeholder="Ämne" required maxlength="255">
                                 <label class="input__label"></label>
                             </li>
                             <li>
-                                <textarea id="message" placeholder="Meddelande" required></textarea>
+                                <textarea id="message" placeholder="Meddelande" required maxlength="500"></textarea>
                                 <label class="input__label"></label>
                             </li>
                             <li>
