@@ -119,9 +119,10 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail() {
-            let message = document.getElementById("message").value;
             Email.send({
-                SecureToken: "06cf501b-e130-487f-94bb-6fe1e83370f9",
+                Host:"smtp.elasticemail.com",
+                Username: "benjamin_nilsson@outlook.com",
+                Password: "65593756331047B7EADCD62807584ADBC0F7",
                 To : 'benjamin_nilsson@outlook.com',
                 From : document.getElementById("email").value,
                 Subject : "Contact Form Enquiry",
