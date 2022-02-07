@@ -69,56 +69,58 @@
             </li>
         </ul> 
     </nav>
-    <section class="block--about block--gray">
-        <div class="grid grid--1x2--contact">
-            <div class="text-zone">
-                <h1>Kontakta mig</h1>
-                <p>Jag är intresserad av både front end och back end jobb.
-                    Har du fler frågor så tveka inte på att använda <span style="color: #15f4ee;">formuläret</span>.
-                </p>
-                       <form onsubmit="sendEmail(); reset(); return false;">
-                        <div class="contact-form">
-                            <ul>
-                                <li>
-                                    <input type="text" id="clientName" placeholder="Namn" required maxlength="45">
-                                    <label" class="input__label"></label>
-                                </li>
-                                <li >
-                                    <input type="email" id="email" placeholder="Email" required maxlength="255">
-                                    <label" class="input__label"></label>
-                                </li>
-                                <li>
-                                    <input type="text" id="subject" placeholder="Ämne" required maxlength="255">
-                                    <label class="input__label"></label>
-                                </li>
-                                <li>
-                                    <textarea id="message" placeholder="Meddelande" required maxlength=500></textarea>
-                                    <label class="input__label"></label>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <button type="submit" class="btn btn--primary btn-background-slide">Skicka meddelande!</button>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
-            </div>
-            <div id="profile">
-                <div id="personal-information">
-                    <p>
-                       Benjamin Nilsson, <br>
-                       Sverige, <br>
-                       549 93 Moholm <br><br>
-                       <span style="color: #15f4ee;">@</span><span>:</span>
-                       benjamin_nilsson@outlook.com
+    <main>
+        <section class="block--about block--gray">
+            <div class="grid grid--1x2--contact">
+                <div class="text-zone">
+                    <h1>Kontakta mig</h1>
+                    <p>Jag är intresserad av både front end och back end jobb.
+                        Har du fler frågor så tveka inte på att använda <span style="color: #15f4ee;">formuläret</span>.
                     </p>
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <div class="contact-form">
+                                <ul>
+                                    <li>
+                                        <input type="text" id="clientName" placeholder="Namn" required maxlength="45">
+                                        <label" class="input__label"></label>
+                                    </li>
+                                    <li >
+                                        <input type="email" id="email" placeholder="Email" required maxlength="255">
+                                        <label" class="input__label"></label>
+                                    </li>
+                                    <li>
+                                        <input type="text" id="subject" placeholder="Ämne" required maxlength="255">
+                                        <label class="input__label"></label>
+                                    </li>
+                                    <li>
+                                        <textarea id="message" placeholder="Meddelande" required maxlength=500></textarea>
+                                        <label class="input__label"></label>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <button type="submit" class="btn btn--primary btn-background-slide">Skicka meddelande!</button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
                 </div>
-                <picture>
-                    <img id="profile-picture" src="/images/CVBild.jpg" alt="cv-bild">
-                </picture>
-            </div>
-    </section>
+                <div id="profile">
+                    <div id="personal-information">
+                        <p>
+                        Benjamin Nilsson, <br>
+                        Sverige, <br>
+                        549 93 Moholm <br><br>
+                        <span style="color: #15f4ee;">@</span><span>:</span>
+                        benjamin_nilsson@outlook.com
+                        </p>
+                    </div>
+                    <picture>
+                        <img id="profile-picture" src="/images/CVBild.jpg" alt="cv-bild">
+                    </picture>
+                </div>
+        </section>  
+    </main>
     <script src="/index.js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/index.js/sendEmail.js"></script>
