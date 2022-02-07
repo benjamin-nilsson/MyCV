@@ -254,5 +254,7 @@ navLinks.addEventListener("click", function () {
   hideMenu.style.visibility = "hidden";
   menu.style.height = "0";
   menu.style.zIndex = "0";
-  main.style.visibility = "visible";
+  collapsible.forEach((item) => {
+    item.classList.toggle("collapsible--expanded");
+  });
 });
