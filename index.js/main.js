@@ -3,6 +3,7 @@ const collapsible = document.querySelectorAll(".collapsible");
 const openMenu = document.getElementById("openMenu");
 const hideMenu = document.getElementById("hideMenu");
 const main = document.getElementById("main");
+const navLinks = document.getElementsByClassName(".menuOptions");
 
 /**
  * Makes the menu collapse and come forth.
@@ -53,9 +54,6 @@ const observer = new IntersectionObserver((entries) => {
       });
       return; // if we added the class, exit the function
     }
-
-    // We're not intersecting, so remove the class!
-    square.classList.remove("reveal-2");
   });
 });
 
@@ -249,4 +247,15 @@ $(document).ready(function () {
   };
 
   $("#rotation").svg3DTagCloud(settings);
+});
+
+navLinks.addEventListener("click", function () {
+  openMenu.style.visibility = "hidden";
+  hideMenu.style.visibility = "visible";
+  menu.style.height = "100%";
+  menu.style.zIndex = "1000";
+  main.style.visibility = "hidden";
+  collapsible.forEach((item) => {
+    item.classList.toggle("collapsible--expanded");
+  });
 });

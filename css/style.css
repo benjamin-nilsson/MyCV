@@ -657,109 +657,6 @@ a {
   }
 }
 
-.wavy-root {
-  position: relative;
-}
-
-.wavy {
-  float: left;
-  position: relative;
-  display: inline-block;
-}
-
-.wavy.animated {
-  -moz-animation: bounce 1s;
-  -webkit-animation: bounce 1s;
-  animation: bounce 1s;
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    top: 0;
-    animation-timing-function: ease-out;
-  }
-  17% {
-    top: 15px;
-    animation-timing-function: ease-in;
-  }
-  34% {
-    top: 0;
-    animation-timing-function: ease-out;
-  }
-  51% {
-    top: 8px;
-    animation-timing-function: ease-in;
-  }
-  68% {
-    top: 0px;
-    animation-timing-function: ease-out;
-  }
-  85% {
-    top: 3px;
-    animation-timing-function: ease-in;
-  }
-  100% {
-    top: 0;
-  }
-}
-@-moz-keyframes bounce {
-  0% {
-    top: 0;
-    animation-timing-function: ease-out;
-  }
-  17% {
-    top: 15px;
-    animation-timing-function: ease-in;
-  }
-  34% {
-    top: 0;
-    animation-timing-function: ease-out;
-  }
-  51% {
-    top: 8px;
-    animation-timing-function: ease-in;
-  }
-  68% {
-    top: 0px;
-    animation-timing-function: ease-out;
-  }
-  85% {
-    top: 3px;
-    animation-timing-function: ease-in;
-  }
-  100% {
-    top: 0;
-  }
-}
-@keyframes bounce {
-  0% {
-    top: 0;
-    animation-timing-function: ease-out;
-  }
-  17% {
-    top: 15px;
-    animation-timing-function: ease-in;
-  }
-  34% {
-    top: 0;
-    animation-timing-function: ease-out;
-  }
-  51% {
-    top: 8px;
-    animation-timing-function: ease-in;
-  }
-  68% {
-    top: 0px;
-  }
-  85% {
-    top: 3px;
-    animation-timing-function: ease-in;
-  }
-  100% {
-    top: 0;
-  }
-}
-
 /* Reveal */
 .reveal-1 {
   visibility: hidden;
@@ -768,32 +665,8 @@ a {
 .reveal-2 {
   visibility: hidden;
 }
-/* .reveal--root {
-  position: relative;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  display: block;
-}
-
-.reveal--root::before {
-  content: attr(data-text);
-  position: absolute;
-  left: -1.5rem;
-  margin-top: -5rem;
-}
-
-.reveal--root::after {
-  content: "";
-  position: absolute;
-  margin-top: 3.8rem;
-  margin-left: 2rem;
-}
-
-@keyframes reveal {
-} */
 
 /* Canvas*/
-
 #canvas1 {
   position: absolute;
   width: 100%;
