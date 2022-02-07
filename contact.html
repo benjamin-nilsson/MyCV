@@ -76,7 +76,7 @@
                         <div class="contact-form">
                             <ul>
                                 <li>
-                                    <input type="text" id="name" placeholder="Namn" required maxlength="45">
+                                    <input type="text" id="clientName" placeholder="Namn" required maxlength="45">
                                     <label" class="input__label"></label>
                                 </li>
                                 <li >
@@ -117,25 +117,6 @@
     </section>
     <script src="/index.js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host:"smtp.elasticemail.com",
-                Username: "benjamin_nilsson@outlook.com",
-                Password: "65593756331047B7EADCD62807584ADBC0F7",
-                To : 'benjamin_nilsson@outlook.com',
-                From : document.getElementById("email").value,
-                Subject : "Contact Form Enquiry",
-                Body : "Name: " + document.getElementById("name").value
-                    + "<br> Email: " + document.getElementById("email").value
-                    + "<br> Subject: " + document.getElementById("subject").value
-                    + "<br> Message: " + document.getElementById("message").value
-            }).then(
-            message => alert("Message sent successfully")
-            );
-
-            console.log(document.getElementById("message").value);
-        }
-    </script>
+    <script src="/index.js/sendEmail.js"></script>
 </body>
 </html>

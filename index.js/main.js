@@ -1,20 +1,12 @@
-/**
- * Makes the menu collapse and come forth.
- */
-/* const collapsible = document.querySelectorAll(".collapsible");
-const menu = document.getElementById('hideAndShowMenu');
-collapsible.forEach((item) => {
-    item.addEventListener("click", function() {
-        item.classList.toggle("collapsible--expanded");
-    })
-}); */
-
 const menu = document.getElementById("menu");
 const collapsible = document.querySelectorAll(".collapsible");
 const openMenu = document.getElementById("openMenu");
 const hideMenu = document.getElementById("hideMenu");
 const main = document.getElementById("main");
 
+/**
+ * Makes the menu collapse and come forth.
+ */
 hideMenu.addEventListener("click", function () {
   openMenu.style.visibility = "visible";
   hideMenu.style.visibility = "hidden";
@@ -37,6 +29,9 @@ openMenu.addEventListener("click", function () {
   });
 });
 
+/**
+ * Reveals the first and the second heading syllable by syllable.
+ */
 const revealsOne = document.querySelectorAll(".reveal-1");
 revealsOne.forEach((item, index) => {
   setTimeout(function () {
@@ -65,23 +60,6 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.querySelector(".reveal--about"));
-
-/* $(".wavy").bind("webkitAnimationEnd mozAnimationEnd animationend", function(){
-    $(this).removeClass(".animated")  
-  })
-  
-$(".wavy").hover(function(){
-$(this).addClass(".animated");        
-}) */
-
-/* const menu = document.getElementById('hideAndShowMenu');
-hideAndShowMenu.addEventListener('click', function() {
-    if (menu.style.visibility === "visible") {
-        menu.style.background = "hidden";
-    } else {
-        menu.style.background = "visible"
-    }
-}); */
 
 /**
  * Controlls the mousemoving effect.
