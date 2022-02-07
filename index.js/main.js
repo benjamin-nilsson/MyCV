@@ -250,11 +250,11 @@ $(document).ready(function () {
 });
 
 navLinks.addEventListener("click", function () {
-  openMenu.style.visibility = "hidden";
-  hideMenu.style.visibility = "visible";
-  menu.style.height = "100%";
-  menu.style.zIndex = "1000";
-  main.style.visibility = "hidden";
+  openMenu.style.visibility = "visible";
+  hideMenu.style.visibility = "hidden";
+  menu.style.height = "0";
+  menu.style.zIndex = "0";
+  main.style.visibility = "visible";
   collapsible.forEach((item) => {
     item.classList.toggle("collapsible--expanded");
   });
