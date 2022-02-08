@@ -195,6 +195,14 @@ a {
   height: 15px;
 }
 
+.icon-scroll {
+  fill: #15f4ee;
+}
+
+.icon-scroll--right {
+  fill: #c91c55;
+}
+
 /* Lists */
 .list {
   list-style: none;
@@ -1154,5 +1162,57 @@ a {
 @media screen and (min-width: 768px) {
   .portfolio-button {
     margin-top: 1rem;
+  }
+}
+
+/* Scroll down*/
+.scroll-down {
+  display: flex;
+  position: absolute;
+  bottom: 3rem;
+  left: 10px;
+  flex-direction: column;
+}
+
+.scroll-down--right {
+  display: flex;
+  position: absolute;
+  bottom: 3rem;
+  right: 10px;
+  flex-direction: column;
+}
+
+.scroll-down span {
+  writing-mode: vertical-rl;
+  animation: bounce 1s linear infinite;
+  color: var(--color-primary);
+}
+
+.scroll-down--right span {
+  writing-mode: vertical-rl;
+  animation: bounce 1s linear infinite;
+  color: #c91c55;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-30px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-down {
+    display: flex;
+    position: absolute;
+    bottom: 3rem;
+    left: 13rem;
   }
 }
