@@ -197,10 +197,22 @@ a {
 
 .icon-scroll {
   fill: #15f4ee;
+  padding-left: 10px;
 }
 
 .icon-scroll--right {
   fill: #c91c55;
+  padding-left: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .icon-scroll {
+    padding-left: 0px;
+  }
+
+  .icon-scroll--right {
+    padding-left: 0px;
+  }
 }
 
 /* Lists */
