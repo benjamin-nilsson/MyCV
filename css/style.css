@@ -756,7 +756,6 @@ a {
   top: 12rem;
   color: var(--color-body);
   margin-left: 3rem;
-  font-family: "La Belle Aurore", cursive;
   z-index: 2;
 }
 
@@ -765,7 +764,6 @@ a {
   padding-bottom: 2rem;
   color: var(--color-body);
   margin-left: 3rem;
-  font-family: "La Belle Aurore", cursive;
   z-index: 2;
 }
 
@@ -774,7 +772,6 @@ a {
   padding-top: 10rem;
   color: var(--color-body);
   margin-left: 3rem;
-  font-family: "La Belle Aurore", cursive;
   z-index: 2;
 }
 
@@ -884,7 +881,6 @@ a {
   position: relative;
   top: 8rem;
   margin-left: 7rem;
-  font-family: "La Belle Aurore", cursive;
   width: 25rem;
 }
 
