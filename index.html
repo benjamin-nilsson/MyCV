@@ -319,23 +319,23 @@
                     <p>Jag är intresserad av både front end och back end jobb.
                         Har du fler frågor så tveka inte på att använda <span style="color: #15f4ee;">formuläret</span>.
                     </p>
-                    <form onsubmit="sendEmail(); reset(); return false;">
+                    <form action="https://formsubmit.co/benjamin_nilsson@outlook.com" method="POST">
                         <div class="contact-form">
                             <ul>
                                 <li>
-                                    <input type="text" id="clientName" placeholder="Namn" required maxlength="45">
+                                    <input type="text" name="name" placeholder="Namn" required minlength="2" maxlength="45">
                                     <label" class="input__label"></label>
                                 </li>
                                 <li >
-                                    <input type="email" id="email" placeholder="Email" required maxlength="255">
+                                    <input type="email" name="email" placeholder="Email" required minlength="10" maxlength="255">
                                     <label" class="input__label"></label>
                                 </li>
                                 <li>
-                                    <input type="text" id="subject" placeholder="Ämne" required maxlength="255">
+                                    <input type="text" name="_subject" placeholder="Ämne" required minlength="0" maxlength="255">
                                     <label class="input__label"></label>
                                 </li>
                                 <li>
-                                    <textarea id="message" placeholder="Meddelande" required maxlength="500"></textarea>
+                                    <textarea name="message" placeholder="Meddelande" required minlength="10" maxlength=500></textarea>
                                     <label class="input__label"></label>
                                 </li>
                                 <li>
@@ -371,7 +371,5 @@
 <script src="/index.js/revealSyllables.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>AOS.init({delay: 000,});</script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="/index.js/sendEmail.js"></script>
 </body>
 </html>
