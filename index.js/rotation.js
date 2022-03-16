@@ -273,6 +273,7 @@ $(document).ready(function () {
     { label: "HTML" },
     { label: "CSS" },
     { label: "MYSQL" },
+    { label: "POSTGRESQL" },
     { label: "SQLITE" },
     { label: "JAVA" },
     { label: "JAVAFX" },
@@ -280,6 +281,7 @@ $(document).ready(function () {
     { label: "GITHUB" },
     { label: "JAVASCRIPT" },
     { label: "REACT" },
+    { label: "DOCKER" },
   ];
 
   var settings = {
