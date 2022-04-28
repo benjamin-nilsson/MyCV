@@ -282,6 +282,8 @@ $(document).ready(function () {
     { label: "JAVASCRIPT" },
     { label: "REACT" },
     { label: "DOCKER" },
+    { label: "WORDPRESS" },
+    { label: "FIGMA" },
   ];
 
   var settings = {
