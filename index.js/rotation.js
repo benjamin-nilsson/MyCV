@@ -284,6 +284,14 @@ $(document).ready(function () {
     { label: "DOCKER" },
     { label: "WORDPRESS" },
     { label: "FIGMA" },
+    { label: "CD/CI" },
+    { label: "Selenium" },
+    { label: "Typescript" },
+    { label: "AutoIT" },
+    { label: "TortiseSVN" },
+    { label: "SCRUM" },
+    { label: "C#" },
+    { label: ".NET" },
   ];
 
   var settings = {
